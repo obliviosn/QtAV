@@ -2,13 +2,11 @@ TEMPLATE = subdirs
 
 SUBDIRS = common
 !android:!ios:!winrt {
-  SUBDIRS += audiopipeline
+  SUBDIRS +=
 !no-widgets {
   SUBDIRS += player
 
-contains(QT_CONFIG, opengl): SUBDIRS += \
-    shader \
-    glslfilter
+contains(QT_CONFIG, opengl): SUBDIRS +=
 
   player.depends += common
 
