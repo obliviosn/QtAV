@@ -24,7 +24,7 @@ isEqual(QT_MAJOR_VERSION, 5) {
   examples.depends += libqtav
 }
 !cross_compile:!no-tests {
-  SUBDIRS += tests
+  SUBDIRS +=
   tests.depends += libqtav libqtavwidgets
 }
 OTHER_FILES += README.md TODO.txt Changelog
