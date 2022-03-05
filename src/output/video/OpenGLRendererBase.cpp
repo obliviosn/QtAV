@@ -104,7 +104,7 @@ void OpenGLRendererBase::drawFrame()
 void OpenGLRendererBase::onInitializeGL()
 {
     DPTR_D(OpenGLRendererBase);
-    //makeCurrent();
+//    makeCurrent();
 #if QT_VERSION >= QT_VERSION_CHECK(4, 8, 0)
     initializeOpenGLFunctions();
 #endif

@@ -70,8 +70,8 @@ contains(QT_CONFIG, opengl):greaterThan(QT_MAJOR_VERSION, 4) {
   SDK_HEADERS *= QtAVWidgets/OpenGLWidgetRenderer.h
   SOURCES *= OpenGLWidgetRenderer.cpp
   isEqual(QT_MAJOR_VERSION, 5):lessThan(QT_MINOR_VERSION, 4) {
-    SDK_HEADERS *= QtAVWidgets/QOpenGLWidget.h
-    SOURCES *= QOpenGLWidget.cpp
+    SDK_HEADERS *=
+    SOURCES *=
   }
 }
 
@@ -99,12 +99,12 @@ config_direct2d {
 }
 config_xv {
   DEFINES *= QTAV_HAVE_XV=1
-  SOURCES += XVRenderer.cpp
+  SOURCES +=
   LIBS *= -lXv -lX11 -lXext
 }
 config_x11 {
   DEFINES *= QTAV_HAVE_X11=1
-  SOURCES *= X11Renderer.cpp
+  SOURCES *=
   LIBS *= -lX11
 }
 # QtAV/private/* may be used by developers to extend QtAV features without changing QtAV library
