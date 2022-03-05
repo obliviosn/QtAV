@@ -79,3 +79,4 @@ PACKAGE_VERSION = $$QTAV_VERSION
 PACKAGE_NAME= QtAV
 include(pack.pri)
 #packageSet($$QTAV_VERSION, QtAV)
+

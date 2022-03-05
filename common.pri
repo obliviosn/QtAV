@@ -500,3 +500,6 @@ defineTest(preparePaths) {
 COMMON_PRI_INCLUDED = 1
 
 } #end COMMON_PRI_INCLUDED
+
+DISTFILES += \
+    $$PWD/user.conf
